@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Customer Service Solutions - Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            height: 350px;
+            max-height: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media (max-width: 768px) {
+            .chart-container {
+                height: 300px;
+            }
+        }
+        .flowchart-arrow {
+            color: #4DA3FF;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center my-12">
+            <h1 class="text-4xl md:text-6xl font-black text-[#004AAD] drop-shadow-sm">Expert Customer Service Solutions</h1>
+            <p class="text-lg md:text-xl mt-4 max-w-3xl mx-auto text-slate-600">Transform your customer experience and slash operational costs with our dedicated, tech-enabled support teams.</p>
+        </header>
+
+        <section id="kpis" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 my-16 text-center">
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-200 transform hover:scale-105 transition-transform duration-300">
+                <p class="text-6xl font-extrabold text-[#0062D8]">$6</p>
+                <p class="text-slate-600 font-semibold mt-2">Per Hour, Per Agent</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-200 transform hover:scale-105 transition-transform duration-300">
+                <p class="text-6xl font-extrabold text-[#0062D8]">&gt;3</p>
+                <p class="text-slate-600 font-semibold mt-2">Years Average Experience</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-200 transform hover:scale-105 transition-transform duration-300">
+                <p class="text-6xl font-extrabold text-[#0062D8]">98%</p>
+                <p class="text-slate-600 font-semibold mt-2">Projected CSAT Score</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-200 transform hover:scale-105 transition-transform duration-300">
+                <p class="text-6xl font-extrabold text-[#0062D8]">40%+</p>
+                <p class="text-slate-600 font-semibold mt-2">Projected Cost Reduction</p>
+            </div>
+        </section>
+
+        <main class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+            <div class="lg:col-span-2 bg-white p-6 md:p-8 rounded-xl shadow-lg border border-slate-200">
+                <h2 class="text-3xl font-bold text-[#004AAD] mb-4">Unbeatable Cost-Effectiveness</h2>
+                <p class="text-slate-600 mb-6">Partnering with us provides immediate and significant savings compared to the high costs of maintaining an in-house team. We deliver premium talent and technology without the premium price tag, allowing you to re-invest savings into core business growth.</p>
+                <div class="chart-container max-w-3xl">
+                    <canvas id="costComparisonChart"></canvas>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg border border-slate-200">
+                <h2 class="text-3xl font-bold text-[#004AAD] mb-4">Experienced & Skilled Agents</h2>
+                 <p class="text-slate-600 mb-6">Our professionals are not just call handlers; they are career customer service experts with a proven ability to solve problems, communicate effectively, and build lasting customer relationships.</p>
+                <div class="chart-container">
+                    <canvas id="agentSkillsChart"></canvas>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg border border-slate-200">
+                <h2 class="text-3xl font-bold text-[#004AAD] mb-4">Diverse Industry Experience</h2>
+                <p class="text-slate-600 mb-6">We've supported businesses across a wide range of sectors. This versatility ensures we can quickly learn your product and customer base, providing knowledgeable and context-aware support from day one.</p>
+                <div class="chart-container">
+                    <canvas id="industryExperienceChart"></canvas>
+                </div>
+            </div>
+
+            <div class="lg:col-span-2 bg-white p-6 md:p-8 rounded-xl shadow-lg border border-slate-200">
+                <h2 class="text-3xl font-bold text-[#004AAD] mb-4">Leveraging Cutting-Edge Technology</h2>
+                <p class="text-slate-600 mb-6">Our teams are proficient in the latest and most effective platforms, ensuring seamless integration with your existing workflows and providing an efficient, data-driven service.</p>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 text-center">
+                    <div class="bg-slate-100 p-4 rounded-lg">
+                        <p class="text-3xl">📈</p>
+                        <p class="font-semibold mt-2">Zoho & Zendesk CRM</p>
+                    </div>
+                    <div class="bg-slate-100 p-4 rounded-lg">
+                        <p class="text-3xl">⚙️</p>
+                        <p class="font-semibold mt-2">Q+ Suite ERP</p>
+                    </div>
+                    <div class="bg-slate-100 p-4 rounded-lg">
+                        <p class="text-3xl">🛒</p>
+                        <p class="font-semibold mt-2">POS Management</p>
+                    </div>
+
+                    <!-- Use grid instead of flex for consistency -->
+                    <div class="bg-slate-100 p-4 rounded-lg">
+                        <p class="text-3xl">☁️</p>
+                        <p class="font-semibold mt-2">AWS Infrastructure</p>
+                    </div>
+                    <div class="bg-slate-100 p-4 rounded-lg">
+                        <p class="text-3xl">📱</p>
+                        <p class="font-semibold mt-2">Remote Ordering</p>
+                    </div>
+                </div>
+
+                </div>
+
+
+                
+
+
+
+
+
+                    <div class="lg:col-span-2 bg-white p-6 md:p-8 rounded-xl shadow-lg border border-slate-200">
+                        <h2 class="text-3xl font-bold text-center text-[#004AAD] mb-6">Our Comprehensive Service Flow</h2>
+                        <p class="text-slate-600 mb-8 max-w-3xl mx-auto text-center">We manage the entire customer journey from initial contact to final resolution, ensuring a consistently positive experience that strengthens your brand.</p>
+                        <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+                            <div class="text-center p-4 rounded-lg bg-slate-50 border border-slate-200">
+                                <p class="font-bold text-lg text-[#0062D8]">Inquiry Management</p>
+                                <p class="text-sm text-slate-500">Email, Chat, Phone</p>
+                            </div>
+                            <p class="text-4xl flowchart-arrow md:rotate-0 rotate-90">→</p>
+                            <div class="text-center p-4 rounded-lg bg-slate-50 border border-slate-200">
+                                <p class="font-bold text-lg text-[#0062D8]">Order & Tech Support</p>
+                                <p class="text-sm text-slate-500">Processing & Troubleshooting</p>
+                            </div>
+                            <p class="text-4xl flowchart-arrow md:rotate-0 rotate-90">→</p>
+                            <div class="text-center p-4 rounded-lg bg-slate-50 border border-slate-200">
+                                <p class="font-bold text-lg text-[#0062D8]">Issue Resolution</p>
+                                <p class="text-sm text-slate-500">Investigation & Solutions</p>
+                            </div>
+                            <p class="text-4xl flowchart-arrow md:rotate-0 rotate-90">→</p>
+                            <div class="text-center p-4 rounded-lg bg-slate-50 border border-slate-200">
+                                <p class="font-bold text-lg text-[#0062D8]">Proactive Communication</p>
+                                <p class="text-sm text-slate-500">Updates & Follow-ups</p>
+                            </div>
+                        </div>
+                    </div>
+</main>
+
+        <footer class="text-center my-16 bg-white p-8 rounded-xl shadow-lg border border-slate-200">
+            <h2 class="text-3xl font-bold text-[#004AAD]">Ready to Elevate Your Customer Service?</h2>
+            <p class="mt-4 mb-6 max-w-2xl mx-auto text-slate-600">Let's discuss how our expert solutions can be tailored to your business. We are confident our blend of experience, technology, and cost-effectiveness will be a significant asset to your operations.</p>
+            <div class="bg-slate-100 inline-block p-4 rounded-lg">
+                <p class="font-semibold text-slate-800">Umais Irshad</p>
+                <a href="mailto:umaisirshad2121@gmail.com" class="text-[#0062D8] hover:text-[#004AAD] font-semibold">umaisirshad2121@gmail.com</a>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        const tooltipTitleCallback = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                                return label.join(' ');
+                            } else {
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        };
+        
+        const brilliantBluesPalette = ['#0062D8', '#4DA3FF', '#004AAD', '#8CC8FF', '#007BFF'];
+
+        const wrapLabel = (label) => {
+            const maxLength = 16;
+            if (typeof label !== 'string' || label.length <= maxLength) {
+                return label;
+            }
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            for (const word of words) {
+                if ((currentLine + ' ' + word).trim().length > maxLength) {
+                    lines.push(currentLine.trim());
+                    currentLine = word;
+                } else {
+                    currentLine = (currentLine + ' ' + word).trim();
+                }
+            }
+            if (currentLine) {
+                lines.push(currentLine.trim());
+            }
+            return lines;
+        };
+
+        const costComparisonCtx = document.getElementById('costComparisonChart').getContext('2d');
+        new Chart(costComparisonCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Typical In-House Agent', 'Our Expert Agent'],
+                datasets: [{
+                    label: 'Cost Per Hour (USD)',
+                    data: [25, 6],
+                    backgroundColor: brilliantBluesPalette,
+                    borderColor: '#ffffff',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                ...tooltipTitleCallback,
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function(value) {
+                                return '$' + value;
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    ...tooltipTitleCallback.plugins,
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+
+        const agentSkillsCtx = document.getElementById('agentSkillsChart').getContext('2d');
+        new Chart(agentSkillsCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Problem Solving', 'Communication', 'Customer Relations', ['Training &', 'Development']].map(wrapLabel),
+                datasets: [{
+                    label: 'Proficiency Score',
+                    data: [95, 98, 97, 92],
+                    backgroundColor: brilliantBluesPalette,
+                    borderColor: '#ffffff',
+                    borderWidth: 2,
+                    indexAxis: 'y',
+                }]
+            },
+            options: {
+                ...tooltipTitleCallback,
+                responsive: true,
+                maintainAspectRatio: false,
+                 indexAxis: 'y',
+                 scales: {
+                    x: {
+                        beginAtZero: true,
+                        max: 100,
+                    }
+                },
+                plugins: {
+                    ...tooltipTitleCallback.plugins,
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+
+        const industryExperienceCtx = document.getElementById('industryExperienceChart').getContext('2d');
+        new Chart(industryExperienceCtx, {
+            type: 'doughnut',
+            data: {
+                labels: [['E-commerce', '& Retail'], ['Electronics', '& Tech'], 'Fitness & Sports', 'Food & Beverage', 'Logistics'],
+                datasets: [{
+                    label: 'Industry Experience',
+                    data: [20, 20, 20, 20, 20],
+                    backgroundColor: brilliantBluesPalette,
+                    borderColor: '#ffffff',
+                    borderWidth: 4,
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                ...tooltipTitleCallback,
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    ...tooltipTitleCallback.plugins,
+                    legend: {
+                        position: 'bottom',
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
